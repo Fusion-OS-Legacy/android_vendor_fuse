@@ -1,2 +1,5 @@
-# Include QCOM macros
-include vendor/fuse/build/core/qcom_utils.mk
+# Include board/platform macros
+include vendor/fuse/build/core/utils.mk
+
+# Include vendor platform definitions
+include vendor/fuse/build/core/vendor/*.mk

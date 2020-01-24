@@ -30,6 +30,11 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/fuse/overlay
 PRODUCT_PACKAGES += \
     ThemePicker
 
+# Charger
+PRODUCT_PACKAGES += \
+    charger_res_images \
+    product_charger_res_images
+
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/fuse/products/common/bin/backuptool.sh:$(TARGET_COPY_OUT_SYSTEM)/install/bin/backuptool.sh \

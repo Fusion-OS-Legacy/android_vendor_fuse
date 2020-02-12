@@ -14,6 +14,9 @@
 # limitations under the License.
 #
 
+# Inherit from fonts config
+$(call inherit-product, vendor/fuse/config/fonts.mk)
+
 # Inherit from our versioning
 $(call inherit-product, vendor/fuse/config/versioning.mk)
 

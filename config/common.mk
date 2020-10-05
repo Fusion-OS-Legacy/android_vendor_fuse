@@ -24,7 +24,7 @@ $(call inherit-product, vendor/fuse/config/BoardConfigFuse.mk)
 $(call inherit-product, vendor/fuse/config/bootanimation.mk)
 
 # Vendor overlays
-PRODUCT_PACKAGE_OVERLAYS += vendor/aosp/overlay
+PRODUCT_PACKAGE_OVERLAYS += vendor/fuse/overlay
 
 # ThemePicker
 PRODUCT_PACKAGES += \

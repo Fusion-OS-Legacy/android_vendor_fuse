@@ -19,3 +19,7 @@ $(call inherit-product, vendor/fuse/config/versioning.mk)
 
 # Inherit from our kernel/header generator
 $(call inherit-product, vendor/fuse/config/BoardConfigFuse.mk)
+
+# ThemePicker
+PRODUCT_PACKAGES += \
+    ThemePicker

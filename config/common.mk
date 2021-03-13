@@ -23,6 +23,14 @@ $(call inherit-product, vendor/fuse/config/versioning.mk)
 # Inherit from our kernel/header generator
 $(call inherit-product, vendor/fuse/config/BoardConfigFuse.mk)
 
+
+ifeq ($(BOARD_USES_QCOM_HARDWARE), true)
+# QTI Permissions
+PRODUCT_COPY_FILES += \
+    vendor/fuse/config/permissions/qcom/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
+    vendor/fuse/config/permissions/qcom/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml
+endif
+
 # Inherit boot animation
 $(call inherit-product, vendor/fuse/config/bootanimation.mk)
 

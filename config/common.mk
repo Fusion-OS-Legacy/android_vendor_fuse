@@ -41,6 +41,10 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/fuse/overlay
 PRODUCT_PACKAGES += \
     ThemePicker
 
+# Packages
+PRODUCT_PACKAGES += \
+    Music
+
 # Charger
 PRODUCT_PACKAGES += \
     charger_res_images \
